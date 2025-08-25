@@ -1,0 +1,140 @@
+.cart-container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  height: 100vh;
+}
+
+.cart-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 25px;
+  color: #040507;
+}
+
+/* Default desktop table */
+.cart-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cart-table th,
+.cart-table td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.cart-table th {
+  background: #AF191B;
+  color: white;
+  font-weight: bold;
+}
+
+.cart-table img {
+  width: 60px;
+  height: auto;
+  border-radius: 5px;
+}
+
+.cart-table input {
+  width: 60px;
+  text-align: center;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.remove-btn {
+  background: #AF191B;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.remove-btn:hover {
+  background: #8a1417;
+}
+
+.cart-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.checkout-btn {
+  background: #040507;
+  color: white;
+  padding: 12px 25px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.checkout-btn:hover {
+  background: #AF191B;
+}
+
+.empty-msg {
+  text-align: center;
+  font-size: 18px;
+  color: gray;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .cart-container {
+    padding: 10px;
+    margin: 20px auto;
+    height: 100vh; /* maintain full viewport height */
+  }
+
+  .cart-title {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+
+  .cart-table {
+    display: block;
+    overflow-x: auto;
+    width: 100%;
+  }
+
+  .cart-table th,
+  .cart-table td {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .cart-table img {
+    width: 50px;
+  }
+
+  .cart-table input {
+    width: 50px;
+    padding: 4px;
+  }
+
+  .remove-btn {
+    padding: 5px 8px;
+    font-size: 14px;
+  }
+
+  .cart-footer {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .checkout-btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+  }
+}
